@@ -14,7 +14,12 @@ export default function Home(props: Props) {
 				className='flex flex-col gap-y-3  w-full max-w-3xl overflow-y-auto'
 			>
 				{props.downloadLinks.map((downloadLink) => (
-					<a key={downloadLink} href={`/${downloadLink}`} download>
+					<a
+						key={downloadLink}
+						href={`/${downloadLink}`}
+						download
+						className='underline text-blue-400 visited:text-violet-400 active:text-violet-400 hover:text-blue-300'
+					>
 						<li className='overflow-hidden bg-white px-4 py-4 shadow sm:rounded-md sm:px-6'>
 							{/* Your content */}
 							{downloadLink}
